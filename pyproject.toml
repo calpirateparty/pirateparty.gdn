@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pirateparty.gdn"
+version = "0.0.2-alpha.0"
+description = "The Pirate Party Global Domain Network"
+authors = ["Angelo Gladding <angelo@lahacker.net>"]
+license = "CC0-1.0"
+readme = "README.md"
+packages = [
+    { include = "ppgdn" }
+]
+
+[tool.poetry.plugins."web.apps"]
+"ppgdn" = "ppgdn:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+# understory = "^0.0.17"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.1"
+understory = {path = "../understory"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

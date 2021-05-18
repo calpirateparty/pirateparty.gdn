@@ -1,2 +1,2 @@
 # pirateparty.gdn
-the pirate party global domain name
+The Pirate Party Global Domain Network
